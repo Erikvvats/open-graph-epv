@@ -1,11 +1,11 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "python": "3.12.7",
   "offline_tests_passed": 68,
   "isolated_publication_copy_tests_passed": 68,
   "walkthrough_cells_executed": 5,
   "isolated_copy_import_verified": true,
-  "dependency_environment": "Reused existing installed dependencies; pip dry run passed. No fresh OS/dependency installation.",
+  "dependency_environment": "Local checks reused installed dependencies on 10 November; a fresh GitHub Actions Ubuntu installation of pinned requirements passed on 11 November.",
   "source_assets_verified": true,
   "teacher_lineage_verified": true,
   "publication_text_absolute_user_paths": 0,
@@ -20,7 +20,18 @@
   },
   "full_retraining_performed_this_update": false,
   "jupyter_kernel_execution_performed": false,
-  "github_published": false,
-  "remote_ci_run": false,
-  "author_personal_code_review": "Required; not certifiable by automated checks"
+  "github_published": true,
+  "remote_ci_run": true,
+  "author_personal_code_review": "Required; not certifiable by automated checks",
+  "local_checks_date": "2026-11-10",
+  "github_publication": {
+    "date": "2026-11-11",
+    "repository": "https://github.com/Erikvvats/open-graph-epv",
+    "visibility": "public",
+    "tested_commit": "d34000ab27bee1a0d6632c285698314900bce620",
+    "ci_url": "https://github.com/Erikvvats/open-graph-epv/actions/runs/43032347080",
+    "ci_conclusion": "success",
+    "tests_passed": 68,
+    "walkthrough_cells_executed": 5
+  }
 }
