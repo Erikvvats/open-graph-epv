@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-10",
+  "scope": "Only this standalone open-data project; no parent-project imports, data or checkpoints.",
+  "sources": {
+    "skillcorner": {
+      "repository": "https://github.com/SkillCorner/opendata",
+      "revision": "4340d274572876239c154c90bc507a9b3250a656"
+    },
+    "statsbomb": {
+      "repository": "https://github.com/hudl/open-data",
+      "revision": "4b73468fc5b0f1950f9f66fada70ad3a4f9327cb"
+    }
+  },
+  "skillcorner_raw_file_sha256": {
+    "data/matches/1874553/1874553_match.json": "e6974e402779d8be44e75bf88ef2a3acfd4d025b87b3fc57f518fa826a645ad8",
+    "data/matches/1874553/1874553_tracking_extrapolated.jsonl": "ea97f58f8eaad925feaeacc6395ec24860dd80027af8a89450276adebd29d265",
+    "data/matches/1874553/1874553_dynamic_events.csv": "92507490abbbeec7697227581c864cfb0a96c29b214dd63dcaa48929bb6c6408",
+    "data/matches/2015213/2015213_match.json": "300342194bf3dcd9fe356ed30df26fd0ee6e8caeb8ce5d8cfd27cf90cd995dff",
+    "data/matches/2015213/2015213_tracking_extrapolated.jsonl": "413990d0024d84856ce1f2a16866b8887472c0cea22c61caef0d1f46505a609e",
+    "data/matches/2015213/2015213_dynamic_events.csv": "1452564da8278500f4672152a27e361d3f5f1b9d741493e598e5bf7729a88811",
+    "data/matches/2016236/2016236_match.json": "93ccf67cead82def1acda87d3cf550fd42f96cb0e1adbff9eeb8824077980495",
+    "data/matches/2016236/2016236_tracking_extrapolated.jsonl": "d78555f9dfd7d1ce9de38066d3c98e6d54417c6d45d73b1f1ce7e26f07263d8f",
+    "data/matches/2016236/2016236_dynamic_events.csv": "425274b44a124ec5e81ff8f2819cebd22702065d0f4e4f8070306db9ae97590a",
+    "data/matches/2017461/2017461_match.json": "db27759bf734dc8e3d9e56f047965cc7c74833bc3d0345ee3821ab97681ce4b9",
+    "data/matches/2017461/2017461_tracking_extrapolated.jsonl": "59cfa5588efee041da439f44df5b5b92f2b7305571dc831164e3d05f7415787a",
+    "data/matches/2017461/2017461_dynamic_events.csv": "d4ce943cd9b912cfcf1f6d2744c9f4ecd6db4d5f7bcd6152b946e2f5ba308878"
+  },
+  "team_selection_sha256": "d455e30c4a916f70b38eb96d34376ae97d026379232c924807a07ffaba55e3b0",
+  "team_audit_sha256": "09a7e9b53b9cc0db67daac5f416f27ab944c7badb421a8bed4ec67e121ab0497",
+  "xg_labels_sha256": "d2d4eefb5fe547551dc2ef8aa0fc770eac767dfa11ddf1c312c32ece699ba1ca",
+  "builder_sha256": "79b5ef04ae296a33de220bb623fa0d66c7f2316089e901e30120e2f1baacde2a",
+  "assets": {
+    "demo/example.json": "49fdac10f48011c3e762a0f681eb10752271e02d1b8aad486386f64fb0a1d562",
+    "demo/predictions.js": "c4cf6644f5ba4cf3ae43443b15130103724a424ed1fc82e18dd509a6fe120f78",
+    "reports/portfolio_results.json": "fdd817f036b1425cf046a1e2821c403914d4e764360f1c100ef6c1e0c5ca4577",
+    "reports/figures/portfolio_error_concentration.png": "8b2043fabccecd172b0ad1ae71fc4ba8e51b83116dd22fc07bdf5674f86b6dd4",
+    "reports/figures/portfolio_results.png": "3555ff9dac6f2bd98b621f79ce6fded68707df9158c511712134906f6692b3af",
+    "reports/figures/portfolio_scene.png": "512bce246181543975022c29be8acd1bf5bc517a8480c5adb3eda6f4150595e0"
+  },
+  "model_weights_distributed": false,
+  "example_training_match_id": 1874553,
+  "checks": {
+    "example_features_match_frozen_training_graph": true,
+    "raw_sources_match_pinned_dataset": true,
+    "frozen_bundle_verified": true
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "date": "2026-11-03",
+  "xg": {
+    "statsbomb_revision": "4b73468fc5b0f1950f9f66fada70ad3a4f9327cb",
+    "n_matches": 644,
+    "n_shots": 16509,
+    "selected_penalty": 0.1,
+    "metrics": {
+      "train": {
+        "n": 11486,
+        "goals": 1180,
+        "log_loss": 0.29383841721239534,
+        "brier": 0.08443663836026272,
+        "auc": 0.74537795985225,
+        "ece_10_equal_width": 0.002970382779522525,
+        "mean_prediction": 0.10273376284172035,
+        "goal_rate": 0.10273376284172035,
+        "calibration_bins": [
+          {
+            "n": 7116,
+            "predicted": 0.0475990238712529,
+            "observed": 0.047639123102866776
+          },
+          {
+            "n": 2589,
+            "predicted": 0.14628009518803956,
+            "observed": 0.14059482425646969
+          },
+          {
+            "n": 1582,
+            "predicted": 0.23991414385719875,
+            "observed": 0.24905183312262957
+          },
+          {
+            "n": 137,
+            "predicted": 0.33295420922913027,
+            "observed": 0.3284671532846715
+          },
+          {
+            "n": 30,
+            "predicted": 0.4371065353391332,
+            "observed": 0.43333333333333335
+          },
+          {
+            "n": 6,
+            "predicted": 0.5614085248404374,
+            "observed": 0.8333333333333334
+          },
+          {
+            "n": 8,
+            "predicted": 0.6373996548636203,
+            "observed": 0.625
+          },
+          {
+            "n": 3,
+            "predicted": 0.7712703660784723,
+            "observed": 1.0
+          },
+          {
+            "n": 7,
+            "predicted": 0.8575762018943338,
+            "observed": 0.7142857142857143
+          },
+          {
+            "n": 8,
+            "predicted": 0.9386985605286667,
+            "observed": 0.875
+          }
+        ]
+      },
+      "val": {
+        "n": 2560,
+        "goals": 229,
+        "log_loss": 0.2669492821489097,
+        "brier": 0.07466502840600445,
+        "auc": 0.7551709538609102,
+        "ece_10_equal_width": 0.01024882856689143,
+        "mean_prediction": 0.09855372043997028,
+        "goal_rate": 0.089453125,
+        "calibration_bins": [
+          {
+            "n": 1629,
+            "predicted": 0.04786398714761377,
+            "observed": 0.039287906691221605
+          },
+          {
+            "n": 583,
+            "predicted": 0.14328276991642963,
+            "observed": 0.1320754716981132
+          },
+          {
+            "n": 308,
+            "predicted": 0.24024780341050012,
+            "observed": 0.2305194805194805
+          },
+          {
+            "n": 27,
+            "predicted": 0.33086208727897143,
+            "observed": 0.3333333333333333
+          },
+          {
+            "n": 5,
+            "predicted": 0.44770711615655323,
+            "observed": 0.6
+          },
+          {
+            "n": 3,
+            "predicted": 0.5601933168549561,
+            "observed": 0.3333333333333333
+          },
+          {
+            "n": 1,
+            "predicted": 0.6674665846779619,
+            "observed": 1.0
+          },
+          {
+            "n": 2,
+            "predicted": 0.7930347015213943,
+            "observed": 0.5
+          },
+          {
+            "n": 2,
+            "predicted": 0.8454915377739969,
+            "observed": 1.0
+          }
+        ]
+      },
+      "test": {
+        "n": 2463,
+        "goals": 252,
+        "log_loss": 0.2878494530471317,
+        "brier": 0.08265255359009897,
+        "auc": 0.7564333814333815,
+        "ece_10_equal_width": 0.005602116168287019,
+        "mean_prediction": 0.10039773438767917,
+        "goal_rate": 0.1023142509135201,
+        "calibration_bins": [
+          {
+            "n": 1559,
+            "predicted": 0.04833687110783131,
+            "observed": 0.04682488774855677
+          },
+          {
+            "n": 550,
+            "predicted": 0.145582441148253,
+            "observed": 0.14181818181818182
+          },
+          {
+            "n": 313,
+            "predicted": 0.23846973005346725,
+            "observed": 0.2523961661341853
+          },
+          {
+            "n": 26,
+            "predicted": 0.3339275713303521,
+            "observed": 0.4230769230769231
+          },
+          {
+            "n": 7,
+            "predicted": 0.4375463470214335,
+            "observed": 0.5714285714285714
+          },
+          {
+            "n": 2,
+            "predicted": 0.5556456355120898,
+            "observed": 0.5
+          },
+          {
+            "n": 2,
+            "predicted": 0.6095921540300944,
+            "observed": 1.0
+          },
+          {
+            "n": 3,
+            "predicted": 0.7693209669726971,
+            "observed": 1.0
+          },
+          {
+            "n": 1,
+            "predicted": 0.8276898377286962,
+            "observed": 1.0
+          }
+        ]
+      }
+    },
+    "training_rate_test_baseline": {
+      "n": 2463,
+      "goals": 252,
+      "log_loss": 0.3301393055933079,
+      "brier": 0.09184622096378324,
+      "auc": 0.5,
+      "ece_10_equal_width": 0.0004195119282002363,
+      "mean_prediction": 0.10273376284172034,
+      "goal_rate": 0.1023142509135201,
+      "calibration_bins": [
+        {
+          "n": 2463,
+          "predicted": 0.10273376284172034,
+          "observed": 0.1023142509135201
+        }
+      ]
+    },
+    "test_log_loss_difference_ci95": [
+      -0.05209262307189478,
+      -0.03262261190657715
+    ],
+    "model_sha256": "6f1a9c01a17946f63b9de73ec14b6aef9a4c600f8f0561af5f2950f757e2385e",
+    "limitations": [
+      "Position-only model; no body part, penalty, keeper or pressure features",
+      "StatsBomb coordinates approximated on a 105 by 68 metre pitch",
+      "StatsBomb holdout does not validate A-League transfer calibration"
+    ],
+    "match_split_counts": {
+      "train": 450,
+      "val": 97,
+      "test": 97
+    },
+    "out_of_pitch_exclusions": 2
+  },
+  "skillcorner_labels": {
+    "skillcorner_revision": "4340d274572876239c154c90bc507a9b3250a656",
+    "n_labels": 526,
+    "min_xg": 0.0007541237656411791,
+    "max_xg": 0.3913223848044165,
+    "mean_xg": 0.08913492276868881,
+    "target_kind": "estimated xG, not provider xG",
+    "coordinate_rule": "goal distance = actual pitch_length/2 - attack-normalized event x_end",
+    "model_input": "shot geometry only; no outcomes or provider xshot/EPV",
+    "labels_sha256": "7da2efa0c558089afff29213eddae0ca79bddd580bcea5aba5c825076847a632"
+  },
+  "epv": {
+    "n_graphs": 29374,
+    "graph_counts": {
+      "train": 20862,
+      "val": 4284,
+      "test": 4228
+    },
+    "match_split": {
+      "train": [
+        1874553,
+        1886347,
+        1899585,
+        1925299,
+        1927964,
+        1953632,
+        1959846,
+        1986691,
+        1996435,
+        1996436,
+        2006229,
+        2006363,
+        2007448,
+        2007721
+      ],
+      "val": [
+        2010085,
+        2011166,
+        2013725
+      ],
+      "test": [
+        2015213,
+        2016236,
+        2017461
+      ]
+    },
+    "dataset_sha256": "4a2b1eed19bd835dc3f8cb7f812bdd1271d27f4462012895145b6bf37d1a2c67",
+    "gnn_best_validation": {
+      "epoch": 10,
+      "n": 4284,
+      "mse": 0.0006857315893284976,
+      "rmse": 0.026186477222576113,
+      "baseline_rmse": 0.02742853494916995,
+      "rmse_skill": 0.0452834148413539
+    },
+    "ball_best_validation": {
+      "epoch": 12,
+      "n": 4284,
+      "mse": 0.0007123142131604254,
+      "rmse": 0.02668921529682777,
+      "baseline_rmse": 0.02742853494916995,
+      "rmse_skill": 0.026954398173736682
+    },
+    "gnn_improvement_vs_ball": 0.018836749925405627,
+    "test_evaluated": false,
+    "seeds": [
+      0
+    ],
+    "checkpoint_reload_forward_finite": true
+  },
+  "tests_passed": 15,
+  "package_build": "passed",
+  "installed_cli": "passed"
+}

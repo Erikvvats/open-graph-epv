@@ -1,0 +1,14 @@
+{
+  "statsbomb_revision": "4b73468fc5b0f1950f9f66fada70ad3a4f9327cb",
+  "competition_seasons": [[2, 27], [9, 281], [43, 3], [43, 106], [55, 43], [55, 282]],
+  "target": "goal versus non-goal, penalty shootouts excluded",
+  "features": "position-derived geometry only, no provider xG or post-shot fields",
+  "model": "L2 logistic regression with standardized geometric basis",
+  "l2_candidates": [0.1, 1.0, 10.0, 100.0],
+  "split": "whole-match random 70/15/15",
+  "split_seed": 1701,
+  "selection": "minimum validation log loss; no refit on validation",
+  "test": "one report after selection, plus training-goal-rate reference and paired match bootstrap",
+  "transfer": "SkillCorner actual pitch length, attack-normalized possession-end coordinates",
+  "epv_initial_runs": "GNN and ball-only MLP, seed 0, 30 epochs maximum, validation stopping; no EPV test evaluation"
+}

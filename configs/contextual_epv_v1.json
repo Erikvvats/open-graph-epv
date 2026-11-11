@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-06",
+  "target": "signed first future contextual xG within 15 seconds, with explicit geometric fallback",
+  "families": [
+    "gnn",
+    "ball",
+    "set"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "dataset_sha256": "e1807865edaff2f850663f60de10d6277a62e070096e73401ce396382478cbc0",
+  "dataset_manifest_sha256": "16e3b6671bce9016526d84f19899bca6b5bbf73a65761623ffc2af547db8bc8d",
+  "teacher_models_sha256": "c750fa6376e994690d5390c7579aed8e03ce2b610dd1da6bc9235773ee38c79c",
+  "teacher_coverage": {
+    "context_shots": 413,
+    "fallback_shots": 113,
+    "total_shots": 526
+  },
+  "split": {
+    "train": [
+      1874553,
+      1886347,
+      1899585,
+      1925299,
+      1927964,
+      1953632,
+      1959846,
+      1986691,
+      1996435,
+      1996436,
+      2006229,
+      2006363,
+      2007448,
+      2007721
+    ],
+    "val": [
+      2010085,
+      2011166,
+      2013725
+    ],
+    "test": [
+      2015213,
+      2016236,
+      2017461
+    ]
+  },
+  "split_sha256": "a8830f078dda9fe6559a20b5ecb47275932bd9995f0d5b108178f9a9c2129ebe",
+  "max_epochs": 30,
+  "batch_size": 64,
+  "early_stopping_patience": 8,
+  "optimizer": "AdamW, lr=0.001, weight_decay=0.001; MSE; clip norm 1",
+  "selection": "Choose family by validation MSE of equal-weight three-seed mirror-averaged ensemble; report all families.",
+  "freeze": "Dataset, source, training reports and checkpoints frozen before test evaluation.",
+  "test_status": "Previously examined three test matches; exploratory evaluation on a new teacher target, not a fresh holdout.",
+  "source_sha256": {
+    "contextual_epv.py": "94c3a46d12cdc7a59c80144ed83266805250dc1f2e36fc471b872a97ab7d43e3",
+    "model.py": "afc7bd2efbc4e3349ec8b61f4d89e05136e57014916e6415f7a56c1c02148b60",
+    "data.py": "1ac62da1e51a171f53069fcb82e142dc5f8b117d4c789eab145c11cb5eda6435",
+    "training.py": "b1e03ed4469d8c511fad663a0abedf41fede1e380d7b9a28722ce1e77b50fb70",
+    "evaluation.py": "b429c14816bae44ddd42f7318f94c67b9b1b80512a513e363bcbd0e03dc86a42",
+    "bundle.py": "b1451677323c894e9dc8800bb7eb3de9bd48e7372f74d4d13b35e30dde801d0e"
+  },
+  "comparisons": [
+    "GNN versus training mean",
+    "GNN versus ball",
+    "GNN versus no messages"
+  ],
+  "uncertainty": "Exact paired whole-match bootstrap, 27 ordered resamples; descriptive only.",
+  "scope": "Predict contextual-xG teacher values; no verified goal calibration or causal action valuation claim."
+}

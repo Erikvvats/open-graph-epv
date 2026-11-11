@@ -1,0 +1,6 @@
+# Tested on Python 3.12.7. Use Python 3.12 for the portfolio walkthrough.
+numpy==2.5.2
+torch==2.13.0
+matplotlib==3.11.1
+pytest==9.1.1
+-e .

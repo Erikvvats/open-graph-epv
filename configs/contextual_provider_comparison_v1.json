@@ -1,0 +1,36 @@
+{
+  "created": "2026-11-06",
+  "purpose": "Exploratory same-state comparison on signed future contextual-xG targets, not native product superiority",
+  "model_policy": "New contextual-target GNN, ball and no-message three-seed ensembles; no tuning on this provider test comparison",
+  "xg_source": "StatsBomb goal-trained spatial-context teacher for 413 shots; frozen geometry fallback for 113 shots",
+  "target": "signed first future contextual xG with explicit geometry fallback in (t,t+15s], same period, complete horizon",
+  "sampling": "Exact player-possession start frame; start matched; tracking possession team agrees with event team; provider for and against values present; unique event per period/frame",
+  "provider_state_columns": [
+    "possession_epv_for_start",
+    "possession_epv_against_start"
+  ],
+  "provider_net": "for minus against; possession_epv_total is not a state value",
+  "families": [
+    "gnn",
+    "ball",
+    "set"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "adaptation": "Unregularized affine least squares fitted only on the existing three validation matches; provider uses both for and against components; net-only affine and GNN affine also reported",
+  "primary_comparison": [
+    "gnn",
+    "skillcorner_adapted"
+  ],
+  "secondary_comparison": [
+    "gnn_adapted",
+    "skillcorner_adapted"
+  ],
+  "metric": "pooled snapshot MSE/RMSE with paired whole-match descriptive bootstrap",
+  "evaluation_status": "Three previously examined test matches; new-target exploratory extension",
+  "provider_limitations": "Unknown provider training overlap and exact open-data model version; current product describes a different horizon and goal target",
+  "no_missing_provider_imputation": true
+}

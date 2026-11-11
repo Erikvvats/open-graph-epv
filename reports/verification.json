@@ -1,0 +1,382 @@
+{
+  "date": "2026-11-10",
+  "upstream_revision": "4340d274572876239c154c90bc507a9b3250a656",
+  "source_audit": {
+    "matches": 20,
+    "possession_ending_shot_markers": 526,
+    "shot_xg_columns": [],
+    "training_target_ready": true,
+    "target_source": "StatsBomb goal-trained spatial-context xG for 413 shots, explicit frozen geometry fallback for 113 shots"
+  },
+  "real_tracking_smoke": {
+    "match_id": 1886347,
+    "tracking_sha256": "3577e2803da95390f8b2f85d47829eb55fbbfee6211c94adc65db0dc78e46b41",
+    "stride_frames": 20,
+    "include_extrapolated": false,
+    "eligible_snapshots_before_target_censoring": 1496,
+    "mean_visible_nodes": 16.09024064171123,
+    "forward_batch_size": 8,
+    "forward_finite": true,
+    "trained": false
+  },
+  "offline_tests": {
+    "passed": 65
+  },
+  "wheel_build": "passed",
+  "performance_claim": null,
+  "notes": "Nine new two-team models trained from fresh initialization. Same input graphs and chronological split; both component targets supervised. Previously examined test matches. No external publication.",
+  "experiment_report": "experiment_v1.json",
+  "attention_history_comparison": {
+    "report": "attention_history.md",
+    "numerical_report": "attention_history_v1.json",
+    "new_runs": 9,
+    "parameter_counts": {
+      "gnn": 31537,
+      "transformer": 31961
+    },
+    "selected_on_validation": "snapshot",
+    "same_test_states": 4228,
+    "frozen_baseline_predictions_bit_identical": true,
+    "raw_history_inference_matches_batched": true,
+    "original_inference_bundle_still_loads": true,
+    "summed_training_seconds": 1395.7843392507639
+  },
+  "contextual_xg": {
+    "report": "contextual_xg.md",
+    "numerical_report": "contextual_xg_v1.json",
+    "n_training_context_shots": 11346,
+    "n_test_context_shots": 2432,
+    "selected_family": "context",
+    "all_526_skillcorner_labels_accepted_by_epv_loader": true,
+    "geometry_fallback_matches_original": true,
+    "contextual_transfer_count": 413,
+    "original_epv_bundle_still_loads": true,
+    "epv_retrained": true,
+    "skillcorner_goal_calibration_validated": false
+  },
+  "primary_project": "Two-team contextual EPV: home_team_epv and away_team_epv",
+  "legacy_geometry_epv_audit": {
+    "report": "epv_audit_v1.json",
+    "selected_family": "gnn",
+    "test_evaluated": true,
+    "n_test_matches": 3,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "epv_audit": {
+    "report": "team_epv.md",
+    "numerical_report": "team_epv_v1.json",
+    "selected_family": "set",
+    "fields": [
+      "home_team_epv",
+      "away_team_epv"
+    ],
+    "target": "Two team-specific expected contextual xG values for the first shot in (t,t+15s], with explicit geometry fallback",
+    "new_training_runs": 9,
+    "test_evaluated": true,
+    "n_test_matches": 3,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "teacher_coverage": {
+      "context_shots": 413,
+      "fallback_shots": 113,
+      "total_shots": 526
+    }
+  },
+  "legacy_geometry_provider_comparison": {
+    "report": "provider_comparison.md",
+    "numerical_report": "provider_comparison_v1.json",
+    "n_validation_pairs": 1891,
+    "n_test_pairs": 1850,
+    "n_test_matches": 3,
+    "new_model_training": false,
+    "conclusion": "No established superiority over validation-adapted SkillCorner outputs on our signed first-shot xG target."
+  },
+  "provider_comparison": {
+    "report": "contextual_epv.md",
+    "numerical_report": "contextual_epv_v1.json",
+    "n_validation_pairs": 1891,
+    "n_test_pairs": 1850,
+    "n_test_matches": 3,
+    "new_model_training": true,
+    "conclusion": "No established superiority over validation-adapted SkillCorner outputs on the contextual-xG proxy target.",
+    "scope": "Earlier contextual net-value model; not rerun for the two-team model"
+  },
+  "contextual_epv_inference": {
+    "raw_test_match": 2015213,
+    "frame": 2240,
+    "raw_features_bit_identical_to_prepared": true,
+    "raw_scores_match_frozen_audit": {
+      "gnn": {
+        "raw_value": -0.0014258877102596064,
+        "batched_audit_value": -0.0014258883893489838,
+        "absolute_difference": 6.790893773960666e-10
+      },
+      "set": {
+        "raw_value": -0.0031188121841599545,
+        "batched_audit_value": -0.0031188130378723145,
+        "absolute_difference": 8.537123599196283e-10
+      }
+    },
+    "default_family": "set",
+    "modified_bundle_rejected": true,
+    "all_nine_training_reports_use_contextual_target": true
+  },
+  "legacy_frozen_selection_and_bundle_still_valid": true,
+  "contextual_diagnostics": {
+    "report": "contextual_diagnostics.md",
+    "numerical_report": "contextual_diagnostics_v1.json",
+    "n_test_snapshots": 4228,
+    "n_test_matches": 3,
+    "n_sensitivity_sample": 96,
+    "n_cases": 6,
+    "n_distinct_future_shots": 79,
+    "largest_shot_share_of_gnn_squared_error": 0.4820055362363576,
+    "raw_scenes_match_frozen_graphs": true,
+    "sample_predictions_match_frozen_audit": true,
+    "training_performed": false,
+    "browser": {
+      "checked_scene_model_frame_combinations": 54,
+      "playback": true,
+      "all_controls_exercised": true,
+      "mobile_horizontal_overflow": false,
+      "javascript_exceptions": 0
+    }
+  },
+  "contextual_net_epv_audit": {
+    "report": "contextual_epv.md",
+    "numerical_report": "contextual_epv_v1.json",
+    "selected_family": "set",
+    "test_evaluated": true,
+    "n_test_matches": 3,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "new_training_runs": 9,
+    "target": "signed first future contextual xG within 15 seconds, with explicit geometric fallback",
+    "teacher_coverage": {
+      "context_shots": 413,
+      "fallback_shots": 113,
+      "total_shots": 526
+    }
+  },
+  "two_team_inference": {
+    "raw_frame_checks": [
+      {
+        "match_id": 2015213,
+        "frame": 2240,
+        "period": 1,
+        "home_possession": false,
+        "family": "gnn",
+        "max_component_error": 2.3283064365386963e-10
+      },
+      {
+        "match_id": 2015213,
+        "frame": 2240,
+        "period": 1,
+        "home_possession": false,
+        "family": "set",
+        "max_component_error": 0.0
+      },
+      {
+        "match_id": 2015213,
+        "frame": 2480,
+        "period": 1,
+        "home_possession": true,
+        "family": "gnn",
+        "max_component_error": 4.656612873077393e-10
+      },
+      {
+        "match_id": 2015213,
+        "frame": 2480,
+        "period": 1,
+        "home_possession": true,
+        "family": "set",
+        "max_component_error": 3.4924596548080444e-10
+      },
+      {
+        "match_id": 2015213,
+        "frame": 40300,
+        "period": 2,
+        "home_possession": true,
+        "family": "gnn",
+        "max_component_error": 2.3283064365386963e-10
+      },
+      {
+        "match_id": 2015213,
+        "frame": 40300,
+        "period": 2,
+        "home_possession": true,
+        "family": "set",
+        "max_component_error": 0.0
+      },
+      {
+        "match_id": 2015213,
+        "frame": 40420,
+        "period": 2,
+        "home_possession": false,
+        "family": "gnn",
+        "max_component_error": 2.3283064365386963e-10
+      },
+      {
+        "match_id": 2015213,
+        "frame": 40420,
+        "period": 2,
+        "home_possession": false,
+        "family": "set",
+        "max_component_error": 4.656612873077393e-10
+      },
+      {
+        "match_id": 2016236,
+        "frame": 1340,
+        "period": 1,
+        "home_possession": false,
+        "family": "gnn",
+        "max_component_error": 2.3283064365386963e-10
+      },
+      {
+        "match_id": 2016236,
+        "frame": 1340,
+        "period": 1,
+        "home_possession": false,
+        "family": "set",
+        "max_component_error": 1.1641532182693481e-10
+      },
+      {
+        "match_id": 2016236,
+        "frame": 1480,
+        "period": 1,
+        "home_possession": true,
+        "family": "gnn",
+        "max_component_error": 1.862645149230957e-09
+      },
+      {
+        "match_id": 2016236,
+        "frame": 1480,
+        "period": 1,
+        "home_possession": true,
+        "family": "set",
+        "max_component_error": 9.313225746154785e-10
+      },
+      {
+        "match_id": 2016236,
+        "frame": 41060,
+        "period": 2,
+        "home_possession": true,
+        "family": "gnn",
+        "max_component_error": 1.7462298274040222e-10
+      },
+      {
+        "match_id": 2016236,
+        "frame": 41060,
+        "period": 2,
+        "home_possession": true,
+        "family": "set",
+        "max_component_error": 4.656612873077393e-10
+      },
+      {
+        "match_id": 2016236,
+        "frame": 41600,
+        "period": 2,
+        "home_possession": false,
+        "family": "gnn",
+        "max_component_error": 1.862645149230957e-09
+      },
+      {
+        "match_id": 2016236,
+        "frame": 41600,
+        "period": 2,
+        "home_possession": false,
+        "family": "set",
+        "max_component_error": 1.862645149230957e-09
+      },
+      {
+        "match_id": 2017461,
+        "frame": 2600,
+        "period": 1,
+        "home_possession": true,
+        "family": "gnn",
+        "max_component_error": 2.3283064365386963e-10
+      },
+      {
+        "match_id": 2017461,
+        "frame": 2600,
+        "period": 1,
+        "home_possession": true,
+        "family": "set",
+        "max_component_error": 4.656612873077393e-10
+      },
+      {
+        "match_id": 2017461,
+        "frame": 2860,
+        "period": 1,
+        "home_possession": false,
+        "family": "gnn",
+        "max_component_error": 0.0
+      },
+      {
+        "match_id": 2017461,
+        "frame": 2860,
+        "period": 1,
+        "home_possession": false,
+        "family": "set",
+        "max_component_error": 2.7939677238464355e-09
+      },
+      {
+        "match_id": 2017461,
+        "frame": 39680,
+        "period": 2,
+        "home_possession": false,
+        "family": "gnn",
+        "max_component_error": 2.3283064365386963e-10
+      },
+      {
+        "match_id": 2017461,
+        "frame": 39680,
+        "period": 2,
+        "home_possession": false,
+        "family": "set",
+        "max_component_error": 4.656612873077393e-10
+      },
+      {
+        "match_id": 2017461,
+        "frame": 39840,
+        "period": 2,
+        "home_possession": true,
+        "family": "gnn",
+        "max_component_error": 1.7462298274040222e-10
+      },
+      {
+        "match_id": 2017461,
+        "frame": 39840,
+        "period": 2,
+        "home_possession": true,
+        "family": "set",
+        "max_component_error": 1.1641532182693481e-10
+      }
+    ],
+    "n_raw_frames": 12,
+    "all_components_match_frozen_audit": true,
+    "both_periods_and_possession_teams_checked": true,
+    "modified_bundle_rejected": true,
+    "default_family": "set"
+  },
+  "two_team_browser": {
+    "checked_scene_model_frame_combinations": 54,
+    "combinations_showing_both_positive": 53,
+    "both_team_values_match_audit": true,
+    "playback": true,
+    "timeline_click": true,
+    "model_case_slider_toggles": true,
+    "mobile_horizontal_overflow": false,
+    "javascript_exceptions": 0
+  }
+}

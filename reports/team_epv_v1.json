@@ -1,0 +1,325 @@
+{
+  "selection": {
+    "selected_family": "set",
+    "validation": {
+      "gnn": {
+        "n": 4284,
+        "component_mse": 0.0006445738134983895,
+        "component_rmse": 0.02538845827336488,
+        "home_team_rmse": 0.03173608446548375,
+        "away_team_rmse": 0.016791919776977842,
+        "home_net_rmse": 0.036153264343738556,
+        "predicted_home_mean": 0.005000971723347902,
+        "predicted_away_mean": 0.004750348161906004,
+        "target_home_mean": 0.004576392006129026,
+        "target_away_mean": 0.003331063548102975
+      },
+      "ball": {
+        "n": 4284,
+        "component_mse": 0.0006880466148965157,
+        "component_rmse": 0.026230642670291474,
+        "home_team_rmse": 0.032677217888586976,
+        "away_team_rmse": 0.017558264744981008,
+        "home_net_rmse": 0.037402231246232986,
+        "predicted_home_mean": 0.004173628985881805,
+        "predicted_away_mean": 0.004150467924773693,
+        "target_home_mean": 0.004576392006129026,
+        "target_away_mean": 0.003331063548102975
+      },
+      "set": {
+        "n": 4284,
+        "component_mse": 0.0006401481424110119,
+        "component_rmse": 0.025301149033413718,
+        "home_team_rmse": 0.031586281782769184,
+        "away_team_rmse": 0.016810802716156283,
+        "home_net_rmse": 0.03601139783859253,
+        "predicted_home_mean": 0.004508329089730978,
+        "predicted_away_mean": 0.004284868482500315,
+        "target_home_mean": 0.004576392006129026,
+        "target_away_mean": 0.003331063548102975
+      }
+    },
+    "models": [
+      {
+        "name": "gnn_seed0",
+        "family": "gnn",
+        "seed": 0,
+        "model_sha256": "b8534ec408190cdc036877b54942ab8b5ccd99f417af1211761136f92790e0c2",
+        "report_sha256": "e7c373f4c83201aa8eab401c5c368a56162532509d712899d8eb28b84660f620"
+      },
+      {
+        "name": "gnn_seed1",
+        "family": "gnn",
+        "seed": 1,
+        "model_sha256": "582832b0e503585e401ee52fabf9e43b24a07b6cb9c153f445cf9f485dd094b8",
+        "report_sha256": "92d9bcab375c915a41108b5d94a3295840e0a826e138a262a5141d4e71febf71"
+      },
+      {
+        "name": "gnn_seed2",
+        "family": "gnn",
+        "seed": 2,
+        "model_sha256": "aaf14ee760c8acfbbc37ffe105096901a26379e962e642585d010b46a7b92dc9",
+        "report_sha256": "7bf26b1cb6f5e460d365ad762dd8fa8c535e56b9881d588b6022797c8abae93f"
+      },
+      {
+        "name": "ball_seed0",
+        "family": "ball",
+        "seed": 0,
+        "model_sha256": "927ed0af3ba7813bfe5da57b0031ff9bc6a2706ed8e20cb69bc64f8312e2a77b",
+        "report_sha256": "8312f21a5b2febc8accbe0e5f8361ebebc1df772a8fa4b47f5bbe89d451a9056"
+      },
+      {
+        "name": "ball_seed1",
+        "family": "ball",
+        "seed": 1,
+        "model_sha256": "c7a53babb045ea7ddb935a323c7b4f004ec5e5896ddcf9362c982c618419d670",
+        "report_sha256": "d9dd16263bbd22799aaa513a686ebde3e92ad787f6563b4559ccf7dbcfda2b3c"
+      },
+      {
+        "name": "ball_seed2",
+        "family": "ball",
+        "seed": 2,
+        "model_sha256": "b85cea519f7e53de98d34a5af60842dede67c8b89d9d270a39765739c34e12c7",
+        "report_sha256": "eb22f3dcb9d8f4a600b5f4dafd7806e015267bffc17023e03719108d9400aa59"
+      },
+      {
+        "name": "set_seed0",
+        "family": "set",
+        "seed": 0,
+        "model_sha256": "16451a62f7b85685febe6fa8c7d23c0fa604366521f09c5b3a43ff025c401de5",
+        "report_sha256": "57834b6af1a0d34239a16bbfab310cf3657226f24281b89da49c25f6fdc7a30e"
+      },
+      {
+        "name": "set_seed1",
+        "family": "set",
+        "seed": 1,
+        "model_sha256": "79cf6276f463bd6d01d1bcb24398379864592ede47d85d0b75c43d3a7664745d",
+        "report_sha256": "514ba4083cf39a0443738dc91cc1bfc374136f9e7a253b8b4c801e70479911af"
+      },
+      {
+        "name": "set_seed2",
+        "family": "set",
+        "seed": 2,
+        "model_sha256": "f77c311929dd0f842b0b7cf53f7f75ad60f3ca4e6a2c3e87d9b4714dcfaa95e4",
+        "report_sha256": "89e5792ffd21f2f062ab8a6c382d1769fdadf4d263b49de05b94e235a59fecac"
+      }
+    ],
+    "protocol": {
+      "date": "2026-11-10",
+      "target": "Two team-specific expected contextual xG values for the first shot in (t,t+15s], with explicit geometry fallback",
+      "fields": [
+        "home_team_epv",
+        "away_team_epv"
+      ],
+      "families": [
+        "gnn",
+        "ball",
+        "set"
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "max_epochs": 30,
+      "patience": 8,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.001,
+      "loss": "Mean of squared errors across both team components",
+      "selection": "Lowest validation two-component MSE of equal-weight three-seed ensemble",
+      "split": {
+        "train": [
+          1874553,
+          1886347,
+          1899585,
+          1925299,
+          1927964,
+          1953632,
+          1959846,
+          1986691,
+          1996435,
+          1996436,
+          2006229,
+          2006363,
+          2007448,
+          2007721
+        ],
+        "val": [
+          2010085,
+          2011166,
+          2013725
+        ],
+        "test": [
+          2015213,
+          2016236,
+          2017461
+        ]
+      },
+      "manifest_sha256": "c9c79cdef4d7868496f9e44e226fdab1a619693a66d7d922229a02eb6cb3f9a4",
+      "source_sha256": {
+        "team_epv.py": "27c8f7ec03ffd918f50ff9cc3c6242cfa47646275696061606e82295741b884f",
+        "team_epv_model.py": "4b362210157ba615171f882c8bb3ab0aa26e0a6c4c6cd8028dd8dad398cfae24",
+        "model.py": "afc7bd2efbc4e3349ec8b61f4d89e05136e57014916e6415f7a56c1c02148b60",
+        "data.py": "1ac62da1e51a171f53069fcb82e142dc5f8b117d4c789eab145c11cb5eda6435",
+        "training.py": "b1e03ed4469d8c511fad663a0abedf41fede1e380d7b9a28722ce1e77b50fb70",
+        "evaluation.py": "b429c14816bae44ddd42f7318f94c67b9b1b80512a513e363bcbd0e03dc86a42"
+      },
+      "test_status": "Three previously examined test matches; exploratory extension, not fresh final evaluation",
+      "output_constraint": "Nonnegative components, sum <= 1; softmax third mass has no no-shot interpretation"
+    },
+    "protocol_sha256": "d1d9c9d78c0a166d3ce7e4aba9aeddb657cb5b4b776e6d70ebab1b6d5d3a6ea7",
+    "source_sha256": {
+      "team_epv.py": "27c8f7ec03ffd918f50ff9cc3c6242cfa47646275696061606e82295741b884f",
+      "team_epv_model.py": "4b362210157ba615171f882c8bb3ab0aa26e0a6c4c6cd8028dd8dad398cfae24",
+      "model.py": "afc7bd2efbc4e3349ec8b61f4d89e05136e57014916e6415f7a56c1c02148b60",
+      "data.py": "1ac62da1e51a171f53069fcb82e142dc5f8b117d4c789eab145c11cb5eda6435",
+      "training.py": "b1e03ed4469d8c511fad663a0abedf41fede1e380d7b9a28722ce1e77b50fb70",
+      "evaluation.py": "b429c14816bae44ddd42f7318f94c67b9b1b80512a513e363bcbd0e03dc86a42"
+    },
+    "fields": [
+      "home_team_epv",
+      "away_team_epv"
+    ],
+    "target": "Two team-specific expected contextual xG values for the first shot in (t,t+15s], with explicit geometry fallback",
+    "training_prior_for_against": [
+      0.007168813608586788,
+      0.0022296288516372442
+    ],
+    "test_evaluated": false
+  },
+  "audit": {
+    "target": "Two team-specific expected contextual xG values for the first shot in (t,t+15s], with explicit geometry fallback",
+    "fields": [
+      "home_team_epv",
+      "away_team_epv"
+    ],
+    "selected_family": "set",
+    "n_test_matches": 3,
+    "metrics": {
+      "gnn": {
+        "n": 4228,
+        "component_mse": 0.0011022399019250438,
+        "component_rmse": 0.0331999985229675,
+        "home_team_rmse": 0.028273834710534476,
+        "away_team_rmse": 0.03748426436001463,
+        "home_net_rmse": 0.04711201786994934,
+        "predicted_home_mean": 0.004945572931319475,
+        "predicted_away_mean": 0.004592468962073326,
+        "target_home_mean": 0.0045413607731461525,
+        "target_away_mean": 0.004794514738023281
+      },
+      "ball": {
+        "n": 4228,
+        "component_mse": 0.001120732713115687,
+        "component_rmse": 0.03347734626752376,
+        "home_team_rmse": 0.02830811116952159,
+        "away_team_rmse": 0.037948863859743956,
+        "home_net_rmse": 0.04752437397837639,
+        "predicted_home_mean": 0.0041746958158910275,
+        "predicted_away_mean": 0.003944391384720802,
+        "target_home_mean": 0.0045413607731461525,
+        "target_away_mean": 0.004794514738023281
+      },
+      "set": {
+        "n": 4228,
+        "component_mse": 0.001109219991800573,
+        "component_rmse": 0.03330495446327127,
+        "home_team_rmse": 0.028281782316558066,
+        "away_team_rmse": 0.03766405146289987,
+        "home_net_rmse": 0.04723750799894333,
+        "predicted_home_mean": 0.004417053423821926,
+        "predicted_away_mean": 0.004187027923762798,
+        "target_home_mean": 0.0045413607731461525,
+        "target_away_mean": 0.004794514738023281
+      }
+    },
+    "training_prior": {
+      "n": 4228,
+      "component_mse": 0.0011491686706439782,
+      "component_rmse": 0.033899390416996855,
+      "home_team_rmse": 0.02877989690112327,
+      "away_team_rmse": 0.03834129465274576,
+      "home_net_rmse": 0.04846602573106916,
+      "predicted_home_mean": 0.004735435687885298,
+      "predicted_away_mean": 0.0046630067723387346,
+      "target_home_mean": 0.0045413607731461525,
+      "target_away_mean": 0.004794514738023281
+    },
+    "teacher_coverage": {
+      "context_shots": 413,
+      "fallback_shots": 113,
+      "total_shots": 526
+    },
+    "selection_sha256": "d455e30c4a916f70b38eb96d34376ae97d026379232c924807a07ffaba55e3b0",
+    "source_sha256": {
+      "team_epv.py": "27c8f7ec03ffd918f50ff9cc3c6242cfa47646275696061606e82295741b884f",
+      "team_epv_model.py": "4b362210157ba615171f882c8bb3ab0aa26e0a6c4c6cd8028dd8dad398cfae24",
+      "model.py": "afc7bd2efbc4e3349ec8b61f4d89e05136e57014916e6415f7a56c1c02148b60",
+      "data.py": "1ac62da1e51a171f53069fcb82e142dc5f8b117d4c789eab145c11cb5eda6435",
+      "training.py": "b1e03ed4469d8c511fad663a0abedf41fede1e380d7b9a28722ce1e77b50fb70",
+      "evaluation.py": "b429c14816bae44ddd42f7318f94c67b9b1b80512a513e363bcbd0e03dc86a42"
+    },
+    "legacy_net_comparison": {
+      "mse_difference": -2.108871244086935e-05,
+      "ci95": [
+        -2.8216271791738223e-05,
+        -1.699692972842032e-05
+      ],
+      "percentile_method": "inverse empirical CDF of exact ordered resamples",
+      "n_matches": 3,
+      "ordered_resamples": 27,
+      "leave_one_match_out_range": [
+        -2.316670765575074e-05,
+        -1.7849804321675067e-05
+      ],
+      "per_match": [
+        {
+          "match_id": 2015213,
+          "n": 1424,
+          "mse_difference": -1.699692972842032e-05
+        },
+        {
+          "match_id": 2016236,
+          "n": 1483,
+          "mse_difference": -1.866874796347868e-05
+        },
+        {
+          "match_id": 2017461,
+          "n": 1321,
+          "mse_difference": -2.8216271791738223e-05
+        }
+      ],
+      "interpretation": "Descriptive paired whole-match bootstrap; too few matches for strong population claims."
+    },
+    "limitations": [
+      "Previously examined three test matches; exploratory evaluation.",
+      "First shot overall within 15 seconds; not each team first shot or at-least-one-goal probability.",
+      "Both predictions may be positive; their sum is expected first-shot xG, not shot probability.",
+      "Teacher transfer calibration and causal action effects remain unverified."
+    ],
+    "legacy_gnn_net_rmse": 0.04733530804514885,
+    "predictions_sha256": "009ef8a1bc3f4a7279f25eb7509ad029059ab41db02945de4e73622635422957"
+  },
+  "visualization": {
+    "fields": [
+      "home_team_epv",
+      "away_team_epv"
+    ],
+    "target": "Two team-specific expected contextual xG values for the first shot in (t,t+15s], with explicit geometry fallback",
+    "selection_sha256": "d455e30c4a916f70b38eb96d34376ae97d026379232c924807a07ffaba55e3b0",
+    "audit_sha256": "09a7e9b53b9cc0db67daac5f416f27ab944c7badb421a8bed4ec67e121ab0497",
+    "source_sha256": "34fdab90e7dcda83ffc93b892c65b1232f3fa5390260a551c6d2773a544ddb9d",
+    "template_sha256": "173ff163fa738eb253767c32f51706c010b9f361c59a8c8081534b5963561da7",
+    "raw_scenes_verified": true,
+    "raw_home_away_identity_verified": true,
+    "n_cases": 6,
+    "n_scene_states": 81,
+    "both_values_nonnegative": true,
+    "both_values_positive_n_test": {
+      "gnn": 4228,
+      "set": 4228,
+      "ball": 4228
+    }
+  }
+}

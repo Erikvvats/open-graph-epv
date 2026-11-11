@@ -1,0 +1,5 @@
+model,validation_rmse,test_rmse,target
+mean,0.038045351092899325,0.048466025674932633,"signed first future contextual xG within 15 seconds, with explicit geometric fallback"
+ball,0.03745675312714333,0.047546012103229514,"signed first future contextual xG within 15 seconds, with explicit geometric fallback"
+set,0.03591727881264187,0.04727880327688267,"signed first future contextual xG within 15 seconds, with explicit geometric fallback"
+gnn,0.036079959296457915,0.047335306735069416,"signed first future contextual xG within 15 seconds, with explicit geometric fallback"

@@ -1,0 +1,610 @@
+{
+  "match_id": 1874553,
+  "split": "train",
+  "metadata": {
+    "home_team": {
+      "id": 1802,
+      "name": "Brisbane Roar FC"
+    },
+    "away_team": {
+      "id": 866,
+      "name": "Adelaide United Football Club"
+    },
+    "pitch_length": 105,
+    "pitch_width": 68,
+    "home_team_side": [
+      "left_to_right",
+      "right_to_left"
+    ],
+    "match_periods": [
+      {
+        "period": 1,
+        "name": "period_1",
+        "start_frame": 10,
+        "end_frame": 28990,
+        "duration_frames": 28980,
+        "duration_minutes": 48.3
+      },
+      {
+        "period": 2,
+        "name": "period_2",
+        "start_frame": 29000,
+        "end_frame": 60300,
+        "duration_frames": 31300,
+        "duration_minutes": 52.17
+      }
+    ],
+    "players": [
+      {
+        "id": 795500,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "RW"
+        }
+      },
+      {
+        "id": 51646,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "AM"
+        }
+      },
+      {
+        "id": 560895,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "AM"
+        }
+      },
+      {
+        "id": 18811,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "LW"
+        }
+      },
+      {
+        "id": 51686,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "CF"
+        }
+      },
+      {
+        "id": 23925,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "LB"
+        }
+      },
+      {
+        "id": 809759,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "LCB"
+        }
+      },
+      {
+        "id": 560893,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "LDM"
+        }
+      },
+      {
+        "id": 51005,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "RB"
+        }
+      },
+      {
+        "id": 26766,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "RCB"
+        }
+      },
+      {
+        "id": 50949,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "RDM"
+        }
+      },
+      {
+        "id": 42513,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "RW"
+        }
+      },
+      {
+        "id": 50959,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "AM"
+        }
+      },
+      {
+        "id": 797295,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "CF"
+        }
+      },
+      {
+        "id": 808608,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "LW"
+        }
+      },
+      {
+        "id": 965695,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "RDM"
+        }
+      },
+      {
+        "id": 155687,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "CF"
+        }
+      },
+      {
+        "id": 965698,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "LDM"
+        }
+      },
+      {
+        "id": 51043,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "RDM"
+        }
+      },
+      {
+        "id": 560882,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "LW"
+        }
+      },
+      {
+        "id": 560986,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "RW"
+        }
+      },
+      {
+        "id": 51002,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "AM"
+        }
+      },
+      {
+        "id": 69111,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "RCB"
+        }
+      },
+      {
+        "id": 51050,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "LCB"
+        }
+      },
+      {
+        "id": 560983,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "RB"
+        }
+      },
+      {
+        "id": 287934,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "LDM"
+        }
+      },
+      {
+        "id": 50994,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "LB"
+        }
+      },
+      {
+        "id": 795537,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "CF"
+        }
+      },
+      {
+        "id": 50966,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "LW"
+        }
+      },
+      {
+        "id": 50973,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "RDM"
+        }
+      },
+      {
+        "id": 969677,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "SUB"
+        }
+      },
+      {
+        "id": 50962,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "SUB"
+        }
+      },
+      {
+        "id": 50968,
+        "team_id": 866,
+        "player_role": {
+          "acronym": "GK"
+        }
+      },
+      {
+        "id": 50950,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "SUB"
+        }
+      },
+      {
+        "id": 560898,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "SUB"
+        }
+      },
+      {
+        "id": 50999,
+        "team_id": 1802,
+        "player_role": {
+          "acronym": "GK"
+        }
+      }
+    ]
+  },
+  "current": {
+    "frame": 40,
+    "period": 1,
+    "possession": {
+      "group": "home team"
+    },
+    "ball_data": {
+      "x": -16.49,
+      "y": 3.39,
+      "is_detected": true
+    },
+    "player_data": [
+      {
+        "player_id": 50999,
+        "x": -39.6,
+        "y": 0.27,
+        "is_detected": false
+      },
+      {
+        "player_id": 69111,
+        "x": -21.08,
+        "y": -9.65,
+        "is_detected": true
+      },
+      {
+        "player_id": 51050,
+        "x": -19.09,
+        "y": 2.65,
+        "is_detected": true
+      },
+      {
+        "player_id": 560983,
+        "x": -7.29,
+        "y": -24.75,
+        "is_detected": true
+      },
+      {
+        "player_id": 50994,
+        "x": -1.06,
+        "y": 22.42,
+        "is_detected": false
+      },
+      {
+        "player_id": 287934,
+        "x": -8.89,
+        "y": 3.81,
+        "is_detected": true
+      },
+      {
+        "player_id": 50973,
+        "x": -0.28,
+        "y": 0.27,
+        "is_detected": true
+      },
+      {
+        "player_id": 51002,
+        "x": -4.4,
+        "y": 6.91,
+        "is_detected": true
+      },
+      {
+        "player_id": 560986,
+        "x": 5.93,
+        "y": -28.54,
+        "is_detected": true
+      },
+      {
+        "player_id": 50966,
+        "x": 4.05,
+        "y": 17.74,
+        "is_detected": true
+      },
+      {
+        "player_id": 795537,
+        "x": 4.2,
+        "y": -17.74,
+        "is_detected": true
+      },
+      {
+        "player_id": 50968,
+        "x": 41.97,
+        "y": -0.14,
+        "is_detected": false
+      },
+      {
+        "player_id": 26766,
+        "x": 19.04,
+        "y": 1.61,
+        "is_detected": true
+      },
+      {
+        "player_id": 809759,
+        "x": 18.79,
+        "y": -5.55,
+        "is_detected": true
+      },
+      {
+        "player_id": 51005,
+        "x": 15.36,
+        "y": 17.49,
+        "is_detected": true
+      },
+      {
+        "player_id": 23925,
+        "x": 17.14,
+        "y": -18.74,
+        "is_detected": false
+      },
+      {
+        "player_id": 560893,
+        "x": 6.95,
+        "y": -5.95,
+        "is_detected": true
+      },
+      {
+        "player_id": 50949,
+        "x": 8.97,
+        "y": 2.71,
+        "is_detected": true
+      },
+      {
+        "player_id": 50959,
+        "x": -2.86,
+        "y": 7.89,
+        "is_detected": true
+      },
+      {
+        "player_id": 42513,
+        "x": 5.42,
+        "y": 15.25,
+        "is_detected": true
+      },
+      {
+        "player_id": 808608,
+        "x": 5.67,
+        "y": -16.43,
+        "is_detected": true
+      },
+      {
+        "player_id": 797295,
+        "x": -4.78,
+        "y": -5.28,
+        "is_detected": true
+      }
+    ]
+  },
+  "previous": {
+    "frame": 39,
+    "period": 1,
+    "possession": {
+      "group": "home team"
+    },
+    "ball_data": {
+      "x": -15.28,
+      "y": 3.13,
+      "is_detected": true
+    },
+    "player_data": [
+      {
+        "player_id": 50999,
+        "x": -39.61,
+        "y": 0.25,
+        "is_detected": false
+      },
+      {
+        "player_id": 69111,
+        "x": -20.94,
+        "y": -9.68,
+        "is_detected": true
+      },
+      {
+        "player_id": 51050,
+        "x": -19.06,
+        "y": 2.41,
+        "is_detected": true
+      },
+      {
+        "player_id": 560983,
+        "x": -7.42,
+        "y": -24.78,
+        "is_detected": true
+      },
+      {
+        "player_id": 50994,
+        "x": -1.07,
+        "y": 22.22,
+        "is_detected": false
+      },
+      {
+        "player_id": 287934,
+        "x": -8.72,
+        "y": 4.02,
+        "is_detected": true
+      },
+      {
+        "player_id": 50973,
+        "x": -0.16,
+        "y": 0.26,
+        "is_detected": true
+      },
+      {
+        "player_id": 51002,
+        "x": -4.32,
+        "y": 7.04,
+        "is_detected": true
+      },
+      {
+        "player_id": 560986,
+        "x": 5.33,
+        "y": -28.51,
+        "is_detected": true
+      },
+      {
+        "player_id": 50966,
+        "x": 3.71,
+        "y": 17.87,
+        "is_detected": true
+      },
+      {
+        "player_id": 795537,
+        "x": 3.77,
+        "y": -17.76,
+        "is_detected": true
+      },
+      {
+        "player_id": 50968,
+        "x": 42.03,
+        "y": -0.14,
+        "is_detected": false
+      },
+      {
+        "player_id": 26766,
+        "x": 19.08,
+        "y": 1.67,
+        "is_detected": true
+      },
+      {
+        "player_id": 809759,
+        "x": 18.87,
+        "y": -5.47,
+        "is_detected": true
+      },
+      {
+        "player_id": 51005,
+        "x": 15.38,
+        "y": 17.46,
+        "is_detected": true
+      },
+      {
+        "player_id": 23925,
+        "x": 17.15,
+        "y": -18.78,
+        "is_detected": false
+      },
+      {
+        "player_id": 560893,
+        "x": 6.99,
+        "y": -5.85,
+        "is_detected": true
+      },
+      {
+        "player_id": 50949,
+        "x": 9.11,
+        "y": 2.67,
+        "is_detected": true
+      },
+      {
+        "player_id": 50959,
+        "x": -2.47,
+        "y": 8.01,
+        "is_detected": true
+      },
+      {
+        "player_id": 42513,
+        "x": 5.47,
+        "y": 15.14,
+        "is_detected": true
+      },
+      {
+        "player_id": 808608,
+        "x": 5.51,
+        "y": -16.36,
+        "is_detected": true
+      },
+      {
+        "player_id": 797295,
+        "x": -4.32,
+        "y": -5.52,
+        "is_detected": true
+      }
+    ]
+  },
+  "future_shots": [
+    {
+      "period": 1,
+      "frame": 179,
+      "team_id": 1802,
+      "xg": 0.09086118560014837,
+      "source": "statsbomb_spatial_context_v1:c750fa6376e994690d5390c7579aed8e03ce2b610dd1da6bc9235773ee38c79c"
+    }
+  ],
+  "recorded_prediction": {
+    "home_team_epv": 0.0021094263065606356,
+    "away_team_epv": 0.0025414754636585712,
+    "home_team_id": 1802,
+    "away_team_id": 866,
+    "net_home_epv": -0.0004320491570979357,
+    "family": "set",
+    "frame": 40,
+    "possession_team_id": 1802,
+    "horizon_seconds": 15,
+    "target": "Two team-specific expected contextual xG values for the first shot in (t,t+15s], with explicit geometry fallback",
+    "seed_std": {
+      "home_team_epv": 0.0005050161853432655,
+      "away_team_epv": 0.0002781436196528375
+    }
+  },
+  "note": "Small extract of pinned SkillCorner Open Data. xG and recorded predictions are derived from StatsBomb-trained models; no model weights included."
+}

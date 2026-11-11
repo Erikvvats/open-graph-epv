@@ -1,0 +1,1136 @@
+{
+  "diagnostics": {
+    "date": "2026-11-10",
+    "target": "signed first future contextual xG within 15 seconds, with explicit geometric fallback",
+    "n_snapshots": 4228,
+    "n_matches": 3,
+    "selected_family": "set",
+    "teacher_coverage": {
+      "context_shots": 413,
+      "fallback_shots": 113,
+      "total_shots": 526
+    },
+    "value_bins": {
+      "gnn": [
+        {
+          "n": 846,
+          "prediction": -0.011239232495427132,
+          "target": -0.010333250276744366
+        },
+        {
+          "n": 845,
+          "prediction": -0.0031020925380289555,
+          "target": -0.0037705721333622932
+        },
+        {
+          "n": 846,
+          "prediction": 0.0004310664953663945,
+          "target": -0.0008791942964307964
+        },
+        {
+          "n": 845,
+          "prediction": 0.005234227515757084,
+          "target": 0.004413642454892397
+        },
+        {
+          "n": 846,
+          "prediction": 0.020962780341506004,
+          "target": 0.01578795537352562
+        }
+      ],
+      "set": [
+        {
+          "n": 846,
+          "prediction": -0.01097225770354271,
+          "target": -0.010233277454972267
+        },
+        {
+          "n": 845,
+          "prediction": -0.0030085586477071047,
+          "target": -0.0025994600728154182
+        },
+        {
+          "n": 846,
+          "prediction": -0.0002621276071295142,
+          "target": -0.0018604462966322899
+        },
+        {
+          "n": 845,
+          "prediction": 0.002719538053497672,
+          "target": 0.005209147464483976
+        },
+        {
+          "n": 846,
+          "prediction": 0.01609094813466072,
+          "target": 0.014704943634569645
+        }
+      ],
+      "ball": [
+        {
+          "n": 846,
+          "prediction": -0.008899785578250885,
+          "target": -0.010241352953016758
+        },
+        {
+          "n": 845,
+          "prediction": -0.003851344808936119,
+          "target": -0.002557775704190135
+        },
+        {
+          "n": 846,
+          "prediction": -5.2869243518216535e-05,
+          "target": 0.000798829598352313
+        },
+        {
+          "n": 845,
+          "prediction": 0.004742672201246023,
+          "target": 0.0007153070764616132
+        },
+        {
+          "n": 846,
+          "prediction": 0.012404119595885277,
+          "target": 0.01650063507258892
+        }
+      ]
+    },
+    "error_groups": {
+      "gnn": {
+        "no_shot": {
+          "n": 3812,
+          "fraction": 0.9016083254493851,
+          "mse_share": 0.05318131297826767,
+          "rmse": 0.01149623841047287,
+          "target_mean": 0.0,
+          "prediction_mean": 0.0017517778323963284
+        },
+        "own_shot": {
+          "n": 285,
+          "fraction": 0.0674077578051088,
+          "mse_share": 0.29533863067626953,
+          "rmse": 0.09908100217580795,
+          "target_mean": 0.07699361443519592,
+          "prediction_mean": 0.017371248453855515
+        },
+        "opponent_shot": {
+          "n": 131,
+          "fraction": 0.03098391674550615,
+          "mse_share": 0.6514798998832703,
+          "rmse": 0.2170538753271103,
+          "target_mean": -0.133808434009552,
+          "prediction_mean": -0.009436061605811119
+        }
+      },
+      "set": {
+        "no_shot": {
+          "n": 3812,
+          "fraction": 0.9016083254493851,
+          "mse_share": 0.03919290006160736,
+          "rmse": 0.00985737331211567,
+          "target_mean": 0.0,
+          "prediction_mean": 0.00039498708792962134
+        },
+        "own_shot": {
+          "n": 285,
+          "fraction": 0.0674077578051088,
+          "mse_share": 0.3102469742298126,
+          "rmse": 0.10142973810434341,
+          "target_mean": 0.07699361443519592,
+          "prediction_mean": 0.01262952946126461
+        },
+        "opponent_shot": {
+          "n": 131,
+          "fraction": 0.03098391674550615,
+          "mse_share": 0.650560200214386,
+          "rmse": 0.21664169430732727,
+          "target_mean": -0.133808434009552,
+          "prediction_mean": -0.009470810182392597
+        }
+      },
+      "ball": {
+        "no_shot": {
+          "n": 3812,
+          "fraction": 0.9016083254493851,
+          "mse_share": 0.021752282977104187,
+          "rmse": 0.007385119795799255,
+          "target_mean": 0.0,
+          "prediction_mean": 0.0005292785936035216
+        },
+        "own_shot": {
+          "n": 285,
+          "fraction": 0.0674077578051088,
+          "mse_share": 0.3167685270309448,
+          "rmse": 0.1030694991350174,
+          "target_mean": 0.07699361443519592,
+          "prediction_mean": 0.008259783498942852
+        },
+        "opponent_shot": {
+          "n": 131,
+          "fraction": 0.03098391674550615,
+          "mse_share": 0.6614789962768555,
+          "rmse": 0.21968680620193481,
+          "target_mean": -0.133808434009552,
+          "prediction_mean": -0.00533235352486372
+        }
+      }
+    },
+    "shot_errors": {
+      "n_distinct_future_shots": 79,
+      "ranked_shots": [
+        {
+          "match_id": 2015213,
+          "shot_frame": 69607,
+          "n_windows": 8,
+          "xg": 0.7636541724205017,
+          "source": "context",
+          "mse_share": 0.4820055362363576
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 8173,
+          "n_windows": 7,
+          "xg": 0.33263832330703735,
+          "source": "context",
+          "mse_share": 0.07720421225213434
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 4301,
+          "n_windows": 6,
+          "xg": 0.3436712920665741,
+          "source": "context",
+          "mse_share": 0.06916566474477896
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 42647,
+          "n_windows": 8,
+          "xg": 0.2946529984474182,
+          "source": "context",
+          "mse_share": 0.06735362594184917
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 70598,
+          "n_windows": 4,
+          "xg": 0.2967739701271057,
+          "source": "geometry",
+          "mse_share": 0.03433411718913491
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 50928,
+          "n_windows": 5,
+          "xg": 0.2700936496257782,
+          "source": "geometry",
+          "mse_share": 0.034310578140488546
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 60886,
+          "n_windows": 8,
+          "xg": 0.17040859162807465,
+          "source": "context",
+          "mse_share": 0.020735895141818856
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 69501,
+          "n_windows": 8,
+          "xg": 0.14897526800632477,
+          "source": "context",
+          "mse_share": 0.014008121101801805
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 12915,
+          "n_windows": 6,
+          "xg": 0.1605503410100937,
+          "source": "context",
+          "mse_share": 0.013973557449391922
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 6126,
+          "n_windows": 5,
+          "xg": 0.15592005848884583,
+          "source": "context",
+          "mse_share": 0.011038338926703415
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 65721,
+          "n_windows": 2,
+          "xg": 0.22079485654830933,
+          "source": "geometry",
+          "mse_share": 0.009115346286305831
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 19653,
+          "n_windows": 7,
+          "xg": 0.11736641824245453,
+          "source": "context",
+          "mse_share": 0.00795854771578004
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 24284,
+          "n_windows": 8,
+          "xg": 0.11061467230319977,
+          "source": "context",
+          "mse_share": 0.007615310528930004
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 41674,
+          "n_windows": 7,
+          "xg": 0.09916168451309204,
+          "source": "context",
+          "mse_share": 0.006327912817230955
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 2534,
+          "n_windows": 3,
+          "xg": 0.15469467639923096,
+          "source": "geometry",
+          "mse_share": 0.00611887860591477
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 10279,
+          "n_windows": 7,
+          "xg": 0.10068216919898987,
+          "source": "geometry",
+          "mse_share": 0.005990160364157462
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 61842,
+          "n_windows": 8,
+          "xg": 0.10256418585777283,
+          "source": "context",
+          "mse_share": 0.005772946283686804
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 62524,
+          "n_windows": 8,
+          "xg": 0.1055440604686737,
+          "source": "context",
+          "mse_share": 0.005016004004580661
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 58272,
+          "n_windows": 6,
+          "xg": 0.0966467559337616,
+          "source": "context",
+          "mse_share": 0.005006560986964908
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 6142,
+          "n_windows": 1,
+          "xg": 0.23164354264736176,
+          "source": "geometry",
+          "mse_share": 0.004249227466603949
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 29992,
+          "n_windows": 3,
+          "xg": 0.12373227626085281,
+          "source": "context",
+          "mse_share": 0.003982683474595595
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 13074,
+          "n_windows": 7,
+          "xg": 0.08312951028347015,
+          "source": "context",
+          "mse_share": 0.0038398789714110247
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 63465,
+          "n_windows": 6,
+          "xg": 0.08615157008171082,
+          "source": "geometry",
+          "mse_share": 0.0035156560202560085
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 18112,
+          "n_windows": 5,
+          "xg": 0.0924399271607399,
+          "source": "geometry",
+          "mse_share": 0.003389719213489786
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 15564,
+          "n_windows": 8,
+          "xg": 0.0764717161655426,
+          "source": "context",
+          "mse_share": 0.003174580794190289
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 54682,
+          "n_windows": 8,
+          "xg": 0.07014032453298569,
+          "source": "context",
+          "mse_share": 0.0029819566544107435
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 15561,
+          "n_windows": 1,
+          "xg": 0.19672195613384247,
+          "source": "geometry",
+          "mse_share": 0.0029600758119446026
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 49930,
+          "n_windows": 1,
+          "xg": 0.17746669054031372,
+          "source": "geometry",
+          "mse_share": 0.0028140261623710297
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 63733,
+          "n_windows": 6,
+          "xg": 0.07373008877038956,
+          "source": "context",
+          "mse_share": 0.0026662813162449187
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 43641,
+          "n_windows": 1,
+          "xg": 0.18367260694503784,
+          "source": "context",
+          "mse_share": 0.0022720901148456573
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 65302,
+          "n_windows": 8,
+          "xg": 0.0632079541683197,
+          "source": "context",
+          "mse_share": 0.002137089660274895
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 44407,
+          "n_windows": 8,
+          "xg": 0.061321407556533813,
+          "source": "context",
+          "mse_share": 0.002039956015084496
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 31595,
+          "n_windows": 6,
+          "xg": 0.0658118799328804,
+          "source": "context",
+          "mse_share": 0.001714775287809417
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 52222,
+          "n_windows": 1,
+          "xg": 0.1425906866788864,
+          "source": "context",
+          "mse_share": 0.0016712637946202271
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 48725,
+          "n_windows": 1,
+          "xg": 0.15901468694210052,
+          "source": "context",
+          "mse_share": 0.0015600787675758324
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 15389,
+          "n_windows": 8,
+          "xg": 0.021189657971262932,
+          "source": "context",
+          "mse_share": 0.0013969349111768799
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 51115,
+          "n_windows": 7,
+          "xg": 0.05055379122495651,
+          "source": "geometry",
+          "mse_share": 0.0012550741151611978
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 17530,
+          "n_windows": 1,
+          "xg": 0.12423095852136612,
+          "source": "geometry",
+          "mse_share": 0.001108306007128648
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 52565,
+          "n_windows": 6,
+          "xg": 0.05687380209565163,
+          "source": "context",
+          "mse_share": 0.0010587068446624617
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 52448,
+          "n_windows": 8,
+          "xg": 0.040460776537656784,
+          "source": "context",
+          "mse_share": 0.0009074795518107475
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 47798,
+          "n_windows": 7,
+          "xg": 0.04102058708667755,
+          "source": "context",
+          "mse_share": 0.0008925790939912056
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 13089,
+          "n_windows": 1,
+          "xg": 0.11092473566532135,
+          "source": "geometry",
+          "mse_share": 0.0008175295698978898
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 43893,
+          "n_windows": 1,
+          "xg": 0.10931409895420074,
+          "source": "context",
+          "mse_share": 0.0007825365410339996
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 12054,
+          "n_windows": 7,
+          "xg": 0.048820775002241135,
+          "source": "context",
+          "mse_share": 0.0007792054662780658
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 22888,
+          "n_windows": 8,
+          "xg": 0.03839590400457382,
+          "source": "geometry",
+          "mse_share": 0.0007732891380539801
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 24753,
+          "n_windows": 6,
+          "xg": 0.039859991520643234,
+          "source": "context",
+          "mse_share": 0.0007311184735971044
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 13075,
+          "n_windows": 6,
+          "xg": 0.04663946479558945,
+          "source": "context",
+          "mse_share": 0.0006758150211579262
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 42937,
+          "n_windows": 7,
+          "xg": 0.0387212336063385,
+          "source": "context",
+          "mse_share": 0.0006723549794785624
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 13927,
+          "n_windows": 8,
+          "xg": 0.036039166152477264,
+          "source": "context",
+          "mse_share": 0.0006474640442950653
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 49914,
+          "n_windows": 2,
+          "xg": 0.06382633000612259,
+          "source": "geometry",
+          "mse_share": 0.0005782246325026177
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 43762,
+          "n_windows": 8,
+          "xg": 0.010011806152760983,
+          "source": "geometry",
+          "mse_share": 0.00048489441254584306
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 10904,
+          "n_windows": 7,
+          "xg": 0.02805977687239647,
+          "source": "context",
+          "mse_share": 0.000444961450318382
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 69942,
+          "n_windows": 8,
+          "xg": 0.0345204621553421,
+          "source": "context",
+          "mse_share": 0.0004332106088506253
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 28510,
+          "n_windows": 8,
+          "xg": 0.034551866352558136,
+          "source": "context",
+          "mse_share": 0.0004201548162931779
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 41031,
+          "n_windows": 7,
+          "xg": 0.03308544680476189,
+          "source": "context",
+          "mse_share": 0.00039576491009086747
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 23431,
+          "n_windows": 5,
+          "xg": 0.025321345776319504,
+          "source": "context",
+          "mse_share": 0.00029160322363752173
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 15182,
+          "n_windows": 8,
+          "xg": 0.025644030421972275,
+          "source": "context",
+          "mse_share": 0.00028293015476229643
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 6624,
+          "n_windows": 5,
+          "xg": 0.03284749016165733,
+          "source": "context",
+          "mse_share": 0.0002739317244172348
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 20364,
+          "n_windows": 6,
+          "xg": 0.03755934536457062,
+          "source": "context",
+          "mse_share": 0.0002644906337432663
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 48015,
+          "n_windows": 5,
+          "xg": 0.0202468428760767,
+          "source": "context",
+          "mse_share": 0.0002475015580995616
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 2669,
+          "n_windows": 4,
+          "xg": 0.04158715531229973,
+          "source": "context",
+          "mse_share": 0.00023054323645266828
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 7069,
+          "n_windows": 8,
+          "xg": 0.029056161642074585,
+          "source": "context",
+          "mse_share": 0.0002108120789640469
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 12283,
+          "n_windows": 2,
+          "xg": 0.04708978533744812,
+          "source": "context",
+          "mse_share": 0.0001842256663081933
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 31347,
+          "n_windows": 5,
+          "xg": 0.026966257020831108,
+          "source": "context",
+          "mse_share": 0.00014998759591182927
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 20247,
+          "n_windows": 3,
+          "xg": 0.028003672137856483,
+          "source": "context",
+          "mse_share": 0.00013806114104493106
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 5959,
+          "n_windows": 3,
+          "xg": 0.021903783082962036,
+          "source": "context",
+          "mse_share": 0.0001341385338564956
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 69858,
+          "n_windows": 7,
+          "xg": 0.030979640781879425,
+          "source": "context",
+          "mse_share": 0.00013085299363475804
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 30350,
+          "n_windows": 1,
+          "xg": 0.054337676614522934,
+          "source": "context",
+          "mse_share": 0.0001244291551105383
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 12924,
+          "n_windows": 2,
+          "xg": 0.03501320257782936,
+          "source": "context",
+          "mse_share": 0.0001179431341827193
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 24328,
+          "n_windows": 2,
+          "xg": 0.0392618291079998,
+          "source": "context",
+          "mse_share": 0.00011733494068280746
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 12877,
+          "n_windows": 6,
+          "xg": 0.02407432720065117,
+          "source": "context",
+          "mse_share": 0.00011436103897578064
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 43669,
+          "n_windows": 1,
+          "xg": 0.056000880897045135,
+          "source": "context",
+          "mse_share": 0.00011150830769972984
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 54478,
+          "n_windows": 4,
+          "xg": 0.02028849348425865,
+          "source": "context",
+          "mse_share": 0.0001064343532534026
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 59367,
+          "n_windows": 8,
+          "xg": 0.019735947251319885,
+          "source": "geometry",
+          "mse_share": 8.489590946392215e-05
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 68814,
+          "n_windows": 7,
+          "xg": 0.019076542928814888,
+          "source": "context",
+          "mse_share": 7.6862396433882e-05
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 12895,
+          "n_windows": 1,
+          "xg": 0.042480599135160446,
+          "source": "context",
+          "mse_share": 5.545643997307364e-05
+        },
+        {
+          "match_id": 2017461,
+          "shot_frame": 9334,
+          "n_windows": 7,
+          "xg": 0.008665834553539753,
+          "source": "context",
+          "mse_share": 5.5023595268548976e-05
+        },
+        {
+          "match_id": 2016236,
+          "shot_frame": 65735,
+          "n_windows": 1,
+          "xg": 0.02787655219435692,
+          "source": "geometry",
+          "mse_share": 3.610066657081926e-05
+        },
+        {
+          "match_id": 2015213,
+          "shot_frame": 50291,
+          "n_windows": 2,
+          "xg": 0.017310557886958122,
+          "source": "context",
+          "mse_share": 2.997485431732798e-06
+        }
+      ]
+    },
+    "sensitivity": {
+      "gnn": {
+        "teammate": {
+          "n_snapshots": 96,
+          "n_player_observations": 616,
+          "mean_abs_change": 4.317604031773989e-05,
+          "median_abs_change": 2.8839469554701022e-05,
+          "p90_abs_change": 8.129367294410864e-05
+        },
+        "opponent": {
+          "n_snapshots": 96,
+          "n_player_observations": 635,
+          "mean_abs_change": 5.514621087265835e-05,
+          "median_abs_change": 4.258604271204344e-05,
+          "p90_abs_change": 0.00011036767391487956
+        },
+        "own_keeper": {
+          "n_snapshots": 14,
+          "n_player_observations": 14,
+          "mean_abs_change": 3.111047096483942e-05,
+          "median_abs_change": 2.623937325552106e-05,
+          "p90_abs_change": 6.453706882894039e-05
+        },
+        "opponent_keeper": {
+          "n_snapshots": 19,
+          "n_player_observations": 19,
+          "mean_abs_change": 4.484112172289506e-05,
+          "median_abs_change": 3.533158451318741e-05,
+          "p90_abs_change": 7.318314164876937e-05
+        }
+      },
+      "set": {
+        "teammate": {
+          "n_snapshots": 96,
+          "n_player_observations": 616,
+          "mean_abs_change": 2.1441371129900707e-05,
+          "median_abs_change": 1.2772123695218137e-05,
+          "p90_abs_change": 5.21719145278136e-05
+        },
+        "opponent": {
+          "n_snapshots": 96,
+          "n_player_observations": 635,
+          "mean_abs_change": 2.730162388581271e-05,
+          "median_abs_change": 1.926123837216033e-05,
+          "p90_abs_change": 5.58685527981392e-05
+        },
+        "own_keeper": {
+          "n_snapshots": 14,
+          "n_player_observations": 14,
+          "mean_abs_change": 9.81039998545644e-06,
+          "median_abs_change": 5.497358870343305e-06,
+          "p90_abs_change": 2.6599992997944356e-05
+        },
+        "opponent_keeper": {
+          "n_snapshots": 19,
+          "n_player_observations": 19,
+          "mean_abs_change": 1.2909570374942728e-05,
+          "median_abs_change": 8.318456821143627e-06,
+          "p90_abs_change": 2.8150121215730903e-05
+        }
+      },
+      "ball": {
+        "teammate": {
+          "n_snapshots": 96,
+          "n_player_observations": 616,
+          "mean_abs_change": 1.1975013573343555e-11,
+          "median_abs_change": 0.0,
+          "p90_abs_change": 0.0
+        },
+        "opponent": {
+          "n_snapshots": 96,
+          "n_player_observations": 635,
+          "mean_abs_change": 2.5270478713705583e-11,
+          "median_abs_change": 0.0,
+          "p90_abs_change": 0.0
+        },
+        "own_keeper": {
+          "n_snapshots": 14,
+          "n_player_observations": 14,
+          "mean_abs_change": 0.0,
+          "median_abs_change": 0.0,
+          "p90_abs_change": 0.0
+        },
+        "opponent_keeper": {
+          "n_snapshots": 19,
+          "n_player_observations": 19,
+          "mean_abs_change": 4.901697761134097e-11,
+          "median_abs_change": 0.0,
+          "p90_abs_change": 0.0
+        }
+      }
+    },
+    "motion_ablation": {
+      "player_motion": {
+        "gnn": {
+          "mean_abs_change": 0.00483676977455616,
+          "p90_abs_change": 0.00974835455417633
+        },
+        "set": {
+          "mean_abs_change": 0.00414410000666976,
+          "p90_abs_change": 0.008568217977881432
+        },
+        "ball": {
+          "mean_abs_change": 9.701277108031814e-12,
+          "p90_abs_change": 0.0
+        }
+      },
+      "all_motion": {
+        "gnn": {
+          "mean_abs_change": 0.005869157612323761,
+          "p90_abs_change": 0.012002803385257721
+        },
+        "set": {
+          "mean_abs_change": 0.005603802856057882,
+          "p90_abs_change": 0.011635868810117245
+        },
+        "ball": {
+          "mean_abs_change": 0.0027651407290250063,
+          "p90_abs_change": 0.005998988635838032
+        }
+      }
+    },
+    "ball_zones": [
+      {
+        "zone": "own_third",
+        "n": 1236,
+        "target_mean": -0.006833415944129229,
+        "prediction_means": {
+          "gnn": -0.006858750246465206,
+          "set": -0.0059066652320325375,
+          "ball": -0.006613118574023247
+        }
+      },
+      {
+        "zone": "middle_third",
+        "n": 1978,
+        "target_mean": -0.00040445843478664756,
+        "prediction_means": {
+          "gnn": 0.0013115768088027835,
+          "set": 0.0006608798285014927,
+          "ball": 0.0006825098535045981
+        }
+      },
+      {
+        "zone": "attacking_third",
+        "n": 1014,
+        "target_mean": 0.013471792452037334,
+        "prediction_means": {
+          "gnn": 0.01605086214840412,
+          "set": 0.009721744805574417,
+          "ball": 0.010351993143558502
+        }
+      }
+    ],
+    "sensitivity_sample": {
+      "rule": "Evenly spaced row indices in frozen test order; independent of targets and predictions",
+      "n": 96,
+      "indices": [
+        0,
+        44,
+        88,
+        133,
+        177,
+        222,
+        266,
+        311,
+        355,
+        400,
+        444,
+        489,
+        533,
+        578,
+        622,
+        667,
+        711,
+        756,
+        800,
+        845,
+        889,
+        934,
+        978,
+        1023,
+        1067,
+        1112,
+        1156,
+        1201,
+        1245,
+        1290,
+        1334,
+        1379,
+        1423,
+        1468,
+        1512,
+        1557,
+        1601,
+        1646,
+        1690,
+        1735,
+        1779,
+        1824,
+        1868,
+        1913,
+        1957,
+        2002,
+        2046,
+        2091,
+        2135,
+        2180,
+        2224,
+        2269,
+        2313,
+        2358,
+        2402,
+        2447,
+        2491,
+        2536,
+        2580,
+        2625,
+        2669,
+        2714,
+        2758,
+        2803,
+        2847,
+        2892,
+        2936,
+        2981,
+        3025,
+        3070,
+        3114,
+        3159,
+        3203,
+        3248,
+        3292,
+        3337,
+        3381,
+        3426,
+        3470,
+        3515,
+        3559,
+        3604,
+        3648,
+        3693,
+        3737,
+        3782,
+        3826,
+        3871,
+        3915,
+        3960,
+        4004,
+        4049,
+        4093,
+        4138,
+        4182,
+        4227
+      ],
+      "n_matches": 3
+    },
+    "case_selection": [
+      {
+        "title": "Stor framtidig egen sjanse",
+        "rule": "St\u00f8rst positiv target; valgt med etterp\u00e5klokskap.",
+        "match_id": 2016236,
+        "anchor_frame": 4200
+      },
+      {
+        "title": "Stor framtidig motstandersjanse",
+        "rule": "Mest negativ target; valgt med etterp\u00e5klokskap.",
+        "match_id": 2015213,
+        "anchor_frame": 69460
+      },
+      {
+        "title": "H\u00f8y verdi uten kommende skudd",
+        "rule": "H\u00f8yest GNN-verdi blant vinduer uten skudd.",
+        "match_id": 2017461,
+        "anchor_frame": 55640
+      },
+      {
+        "title": "GNN og ballmodell er uenige",
+        "rule": "St\u00f8rst absolutt forskjell mellom GNN og ballmodell.",
+        "match_id": 2015213,
+        "anchor_frame": 62480
+      },
+      {
+        "title": "Typisk feil i et skuddvindu",
+        "rule": "N\u00e6r median absolutt GNN-feil blant skuddvinduer.",
+        "match_id": 2015213,
+        "anchor_frame": 24640
+      },
+      {
+        "title": "Typisk feil uten skudd",
+        "rule": "N\u00e6r median absolutt GNN-feil blant vinduer uten skudd.",
+        "match_id": 2015213,
+        "anchor_frame": 6300
+      }
+    ],
+    "limitations": [
+      "Previously examined three test matches; diagnostics do not validate generalization.",
+      "Realized first-shot teacher targets are noisy outcomes, not the true conditional expected value.",
+      "Hindsight-selected cases are illustrative, not representative evidence.",
+      "Fixed-velocity 1m perturbations may be out of distribution; sensitivities are not causal effects or attribution.",
+      "Motion ablations set velocity and validity to zero; missing-motion scenes may be out of distribution.",
+      "Observed heatmaps mix different situations; they do not describe the effect of moving the ball.",
+      "Missing or extrapolated players remain masked; no interpolation or invented positions."
+    ],
+    "provenance": {
+      "dataset_sha256": "e1807865edaff2f850663f60de10d6277a62e070096e73401ce396382478cbc0",
+      "selection_sha256": "81cb4323b385d0e6780313de9e9afe908b8ac010cdc93376bbcb69154d04751c",
+      "audit_sha256": "40add9f3fec63c6faddb2db8b0737e6abbc0b9f12578fdc1ab2dfd976a7ece26",
+      "diagnostics_source_sha256": "4a6640f0049a59e071dbd6312ea1ac25318fef58d61d334a1c807012c433c133",
+      "template_sha256": "23d42729dbad5f126978a3024ac06c17073282c65fc9cfd2453604c9b814da91",
+      "raw_scenes_match_frozen_graphs": true,
+      "sample_predictions_match_frozen_audit": true,
+      "training_performed": false
+    }
+  },
+  "browser_verification": {
+    "checked_scene_model_frame_combinations": 54,
+    "playback": true,
+    "all_controls_exercised": true,
+    "mobile_horizontal_overflow": false,
+    "javascript_exceptions": 0
+  },
+  "offline_tests_passed": 57
+}

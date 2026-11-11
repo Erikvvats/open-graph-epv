@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-graph-epv"
+version = "0.1.0"
+description = "Separate home and away EPV on SkillCorner tracking with contextual xG targets"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21", "torch>=1.13"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+plots = ["matplotlib>=3.6"]
+
+[project.scripts]
+graph-epv = "open_graph_epv.cli:main"
+contextual-epv = "open_graph_epv.contextual_epv:main"
+team-epv = "open_graph_epv.team_epv:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-10",
+  "python": "3.12.7",
+  "offline_tests_passed": 68,
+  "isolated_publication_copy_tests_passed": 68,
+  "walkthrough_cells_executed": 5,
+  "isolated_copy_import_verified": true,
+  "dependency_environment": "Reused existing installed dependencies; pip dry run passed. No fresh OS/dependency installation.",
+  "source_assets_verified": true,
+  "teacher_lineage_verified": true,
+  "publication_text_absolute_user_paths": 0,
+  "parent_project_imports": 0,
+  "main_documentation_links_verified": true,
+  "browser": {
+    "checked_card_combinations": 51,
+    "playback_advanced": true,
+    "target_curves_verified": true,
+    "mobile_horizontal_overflow": false,
+    "javascript_errors": []
+  },
+  "full_retraining_performed_this_update": false,
+  "jupyter_kernel_execution_performed": false,
+  "github_published": false,
+  "remote_ci_run": false,
+  "author_personal_code_review": "Required; not certifiable by automated checks"
+}

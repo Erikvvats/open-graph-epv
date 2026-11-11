@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-10",
+  "target": "Two team-specific expected contextual xG values for the first shot in (t,t+15s], with explicit geometry fallback",
+  "fields": [
+    "home_team_epv",
+    "away_team_epv"
+  ],
+  "families": [
+    "gnn",
+    "ball",
+    "set"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "max_epochs": 30,
+  "patience": 8,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.001,
+  "loss": "Mean of squared errors across both team components",
+  "selection": "Lowest validation two-component MSE of equal-weight three-seed ensemble",
+  "split": {
+    "train": [
+      1874553,
+      1886347,
+      1899585,
+      1925299,
+      1927964,
+      1953632,
+      1959846,
+      1986691,
+      1996435,
+      1996436,
+      2006229,
+      2006363,
+      2007448,
+      2007721
+    ],
+    "val": [
+      2010085,
+      2011166,
+      2013725
+    ],
+    "test": [
+      2015213,
+      2016236,
+      2017461
+    ]
+  },
+  "manifest_sha256": "c9c79cdef4d7868496f9e44e226fdab1a619693a66d7d922229a02eb6cb3f9a4",
+  "source_sha256": {
+    "team_epv.py": "27c8f7ec03ffd918f50ff9cc3c6242cfa47646275696061606e82295741b884f",
+    "team_epv_model.py": "4b362210157ba615171f882c8bb3ab0aa26e0a6c4c6cd8028dd8dad398cfae24",
+    "model.py": "afc7bd2efbc4e3349ec8b61f4d89e05136e57014916e6415f7a56c1c02148b60",
+    "data.py": "1ac62da1e51a171f53069fcb82e142dc5f8b117d4c789eab145c11cb5eda6435",
+    "training.py": "b1e03ed4469d8c511fad663a0abedf41fede1e380d7b9a28722ce1e77b50fb70",
+    "evaluation.py": "b429c14816bae44ddd42f7318f94c67b9b1b80512a513e363bcbd0e03dc86a42"
+  },
+  "test_status": "Three previously examined test matches; exploratory extension, not fresh final evaluation",
+  "output_constraint": "Nonnegative components, sum <= 1; softmax third mass has no no-shot interpretation"
+}

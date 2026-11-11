@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-03",
+  "dataset_sha256": "4a2b1eed19bd835dc3f8cb7f812bdd1271d27f4462012895145b6bf37d1a2c67",
+  "families": ["gnn", "ball", "set"],
+  "seeds": [0, 1, 2],
+  "max_epochs": 30,
+  "early_stopping_patience": 8,
+  "existing_seed0_runs": ["outputs/gnn_seed0", "outputs/ball_seed0"],
+  "set_ablation": "Same nodes, encoder, node-update MLPs and pooling; aggregate message is zero. No pairwise messages. Unused message parameters remain initialized identically.",
+  "selection": "Choose family by validation MSE of its equal-weight three-seed ensemble; retain all families in final comparison.",
+  "freeze": "Write selection with dataset, training-report and checkpoint hashes before test prediction.",
+  "test": "One audit of all families; each seed, ensemble, per-match RMSE and signed calibration summaries.",
+  "uncertainty": "Exact paired match-bootstrap distribution over 3^3 ordered resamples of the three test matches; descriptive only with so few clusters.",
+  "comparisons": ["gnn versus training mean", "gnn versus ball", "gnn versus set"],
+  "scope": "Predictive xG-proxy error. No causal movement recommendation, xG transfer validation, or performance-based threshold changes."
+}

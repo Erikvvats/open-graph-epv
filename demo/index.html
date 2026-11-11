@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Graph EPV · Two team values</title>
+<style>
+:root{font:16px/1.55 system-ui,sans-serif;color:#18353d;background:#f2f6f4}*{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:auto;padding:28px}h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:12px 0}h2{font-size:18px;margin:0 0 8px}p{max-width:85ch}a{color:#126b7c}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#537069}.muted,small{color:#52676c}.controls{display:flex;flex-wrap:wrap;gap:20px;margin:24px 0}.controls label{display:grid;gap:5px;flex:1;min-width:180px}select,button{font:inherit;padding:10px;border:1px solid #a9bcb6;border-radius:6px;background:white;color:inherit;max-width:100%}button{cursor:pointer}:focus-visible{outline:3px solid #d88d13;outline-offset:3px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card,section{background:white;border:1px solid #d5e0dc;border-radius:10px;padding:18px;margin-bottom:16px;min-width:0}.card{border-top:4px solid #178caa}.card.away{border-top-color:#e55f58}.card strong{display:block;font-size:34px;font-variant-numeric:tabular-nums}.card code{font-size:12px;overflow-wrap:anywhere}.card p{margin:0;min-height:3em}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px}.home-color{color:#147e98}.away-color{color:#c14c46}.ball-color{color:#936b13}svg{width:100%;height:auto;display:block}#pitch{background:#edf5ef;border-radius:6px}.playback{display:flex;align-items:center;gap:12px;margin:14px 0}#frame{width:100%;min-width:0;accent-color:#167c80}.note{border-left:3px solid #d2a54c;padding:10px 14px;background:#fff9e9;font-size:14px}footer{font-size:13px;margin:28px 0}footer img{display:block;width:135px;margin-top:16px}output{min-width:55px;font-variant-numeric:tabular-nums}@media(max-width:500px){main{padding:16px}.card{padding:12px}.card strong{font-size:28px}.controls{gap:12px}.card p{font-size:13px}section{padding:12px}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">Open data · Exploratory football modelling</div>
+<h1>Two teams. Two future values.</h1>
+<p>Expected contextual xG of the <strong>first shot in the next 15 seconds</strong>, attributed to its team. These are recorded model predictions, not live inference or validated probabilities of scoring.</p>
+<p class="muted">The no-message player model won validation. Test improvements over ball-only are small; three previously examined matches cannot establish tactical understanding.</p>
+<div class="controls">
+<label>Illustrative sequence<select id="case"></select></label>
+<label>Model<select id="model"><option value="set">Player set · validation winner</option><option value="gnn">Message-passing GNN</option><option value="ball">Ball-only MLP</option></select></label>
+</div>
+<h2 id="match"></h2><p class="muted" id="selection"></p>
+<div class="cards">
+<div class="card"><p id="homename"></p><code>home_team_epv</code><strong id="homevalue"></strong></div>
+<div class="card away"><p id="awayname"></p><code>away_team_epv</code><strong id="awayvalue"></strong></div>
+</div>
+<section>
+<div class="legend"><span class="home-color">● Home →</span><span class="away-color">● Away ←</span><span class="ball-color">● Ball</span><span>Square = goalkeeper</span></div>
+<svg id="pitch" viewBox="0 0 800 540" role="img" aria-label="Observed player positions; home attacks right"></svg>
+<div class="playback"><button id="play" type="button">Play</button><input id="frame" type="range" min="0" value="0" aria-label="Sequence snapshot"><output id="time"></output></div>
+<small id="frameinfo"></small>
+</section>
+<section><h2>Expected first-shot xG</h2>
+<label><input id="targets" type="checkbox"> Show realized future targets (hindsight; dashed)</label>
+<svg id="timeline" viewBox="0 0 800 250" role="img" aria-label="Home and away expected first-shot xG over the recorded sequence"></svg>
+<small>Seconds relative to the selected anchor. Playback steps through snapshots; missing intervals are not interpolated. Vertical scale adapts to the selected sequence and target display.</small>
+</section>
+<p class="note">Examples were selected using future labels or prediction errors. They are illustrative, not a representative performance sample. Only observed players are shown. A high realized future target does not mean the earlier conditional expectation should equal it.</p>
+<p>526 shot markers: 413 contextual xG estimates and 113 geometry fallbacks. The teacher is trained on StatsBomb goal outcomes; these are not official StatsBomb xG values. <a href="../README.md">Results and limitations</a> · <a href="../reports/portfolio_results.json">Numerical results</a></p>
+<footer>Tracking: <a href="https://github.com/SkillCorner/opendata">SkillCorner Open Data</a> / PySport initiative · <a href="../third_party/SkillCorner-LICENSE.txt">MIT data license</a>.<br>xG training: <a href="https://github.com/hudl/open-data">StatsBomb Open Data</a> · <a href="../third_party/StatsBomb-LICENSE.pdf">Separate data agreement</a>.<br>Runs locally without external scripts or network requests.<img src="../assets/statsbomb-logo.png" alt="StatsBomb"></footer>
+</main><script src="predictions.js"></script><script src="viewer.js"></script></body></html>

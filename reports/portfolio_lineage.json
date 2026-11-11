@@ -1,0 +1,40 @@
+{
+  "checked": "2026-11-10",
+  "teacher_lineage_verified": true,
+  "statsbomb_seasons": [
+    {
+      "competition_id": 2,
+      "season_id": 27,
+      "n_matches": 380
+    },
+    {
+      "competition_id": 9,
+      "season_id": 281,
+      "n_matches": 34
+    },
+    {
+      "competition_id": 43,
+      "season_id": 3,
+      "n_matches": 64
+    },
+    {
+      "competition_id": 43,
+      "season_id": 106,
+      "n_matches": 64
+    },
+    {
+      "competition_id": 55,
+      "season_id": 43,
+      "n_matches": 51
+    },
+    {
+      "competition_id": 55,
+      "season_id": 282,
+      "n_matches": 51
+    }
+  ],
+  "statsbomb_manifest_sha256": "19c937b843f763ea5c33e8f14106675a47a55c015d2c139b6625d4be416691b6",
+  "teacher_data_manifest_sha256": "038123ae0843a465c0456b503d59e154f9f728c4a650610c902825c0ed3d14fe",
+  "teacher_model_sha256": "c750fa6376e994690d5390c7579aed8e03ce2b610dd1da6bc9235773ee38c79c",
+  "scope": "Teacher lineage checked against the pinned public StatsBomb corpus; all SkillCorner source/demo checks are in public_provenance.json."
+}
